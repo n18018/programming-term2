@@ -1,3 +1,5 @@
+import sys
+
 # メインメニュー
 main = {'DripCoffee': 280,
         'ColdBrewCoffee': 320,
@@ -26,8 +28,10 @@ while True:
     order_1 = input("メインメニューを選んでください。")
     if order_1 in main:
         print("メインメニューを承りました。")
+        break
     elif order_1 == "" or order_1 == "q":
         print("注文がキャンセルされました。")
+        sys.exit(0)
     else:
         print("選択されたメニューはありません")
 
@@ -44,4 +48,4 @@ while True:
               "他にオプションメニューの注文はございますか?")
 
 # 注文内容の確認
-print("注文内容は[", order_1, a_order, "]です。")
+print("注文内容は[", order_1, a_order, "]です。合計金額は",  "です。右奥のカウンターにてお待ちください。")
