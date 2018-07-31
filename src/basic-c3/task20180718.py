@@ -22,13 +22,12 @@ op = {'LowFatMilk': 0,
 # オーダーリスト
 a_order = []
 sum_v = 0
-sum_m = 0
 
 # オーダー開始
 while True:
     order_1 = input("メインメニューを選んでください。")
     if order_1 in main:
-        sum_m = op[order_1]
+        sum_v += main[order_1]
         print("メインメニューを承りました。")
         break
     elif order_1 == "" or order_1 == "q":
@@ -41,7 +40,7 @@ while True:
     order_2 = input("オプションメニューを選んでください。")
     if order_2 in op:
         a_order.append(order_2)
-        sum_v = op[order_2]
+        sum_v += op[order_2]
         print("他にオプションメニューの注文はございますか?")
     elif order_2 == "" or order_2 == "q":
         break
@@ -51,8 +50,5 @@ while True:
 
 # 注文内容の確認
 print("注文内容は[", order_1, a_order, "]です。")
-print("合計金額は", sum_v + sum_m, "円です。")
+print("合計金額は", sum_v, "円です。")
 print("右奥のカウンターにてお待ちください。")
-
-
-# 合計金額の出力がまだです。
