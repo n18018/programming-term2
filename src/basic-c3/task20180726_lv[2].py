@@ -14,5 +14,6 @@ while True:
         input("サイコロを降ってください")
         print(shake_dice, "が出ました。", "現在位置は", cur_x, "です。")
     if cur_x == 10:
-        print("おめでとうございます、ゴールしました!")
         break
+
+print("おめでとうございます、ゴールしました!")
