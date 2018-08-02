@@ -6,4 +6,6 @@ print('私は', age, '歳です')
 
 count = '5'
 # countに1を足した値を出力してください
-print(count + '1')
+count = int(count)
+count = count + 1
+print(count)
