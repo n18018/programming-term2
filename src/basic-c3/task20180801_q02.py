@@ -6,5 +6,3 @@ TAX_RATE = 10
 t10 = lambda t: round(t * (1 + TAX_RATE / 100))
 
 print(list(map(t10, money)))
-
-# 現状
