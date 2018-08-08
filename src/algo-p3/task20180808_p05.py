@@ -1,4 +1,18 @@
 def print_hand(hand, name='ゲスト'):
+    '''
+    誰がじゃんけんで何を出したかを取得
+
+    Parameters
+    ----------
+    hand
+        じゃんけんで出した手の形
+    name='ゲスト'
+        じゃんけんのプレイヤー(初期値は'ゲスト')
+
+    Returns
+    -------
+    None
+    '''
     print(name + 'は' + hand + 'を出しました')
 
 
