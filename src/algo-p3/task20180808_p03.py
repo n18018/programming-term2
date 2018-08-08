@@ -5,7 +5,7 @@ def print_hand(hand, name):
     print(name, "は", hand, "を出しました")
 
 # 第2引数に文字列「ななしのたろう」を入れてprint_hand関数を呼び出すよう変更してください
-print(print_hand('グー', 'ななしのたろう'))
+print_hand('グー', 'ななしのたろう')
 
 # 第2引数に文字列「コンピューター」を入れてprint_hand関数を呼び出すよう変更してください
-print(print_hand('パー', 'コンピューター'))
+print_hand('パー', 'コンピューター')

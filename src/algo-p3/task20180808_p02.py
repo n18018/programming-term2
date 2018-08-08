@@ -4,7 +4,7 @@ def print_hand(hand):
     print(hand, "を出しました")
 
 # 引数に文字列グーを入れて、print_hand関数を呼び出してください
-print(print_hand('グー'))
+print_hand('グー')
 
 # 引数を文字列パーとして、print_hand関数を呼び出してください
-print(print_hand('パー'))
+print_hand('パー')

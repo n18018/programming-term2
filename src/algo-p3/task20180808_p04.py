@@ -3,4 +3,4 @@ def print_hand(hand, name='ゲスト'):
     print(name + 'は' + hand + 'を出しました')
 
 # 引数に文字列グーのみを入れてprint_hand関数を呼び出してください
-print(print_hand('グー'))
+print_hand('グー')
