@@ -3,17 +3,65 @@ import random
 
 
 def validate(hand):
+    '''
+    じゃんけんで出した手の形を正しく出力させるための関数(0,1,2以外で構文エラーが出ないようにするもの)
+
+    Parameters
+    ----------
+    hand
+        じゃんけんで出した手の形
+
+    Returns
+    -------
+    False
+        不正入力
+    True
+        正しい入力
+    '''
     if hand < 0 or hand > 2:
         return False
     return True
 
 
 def print_hand(hand, name='ゲスト'):
+    '''
+    誰がじゃんけんで何を出したかを取得
+
+    Parameters
+    ----------
+    hand
+        じゃんけんで出した手の形
+    name-'ゲスト'
+        プレイヤーの名前(初期値はゲスト)
+
+    Returns
+    -------
+    None
+    '''
     hands = ['グー', 'チョキ', 'パー']
     print(name + 'は' + hands[hand] + 'を出しました')
 
 
 def judge(player, computer):
+    '''
+    playerとcomputerの対戦結果を出力するための関数
+
+    Parameters
+    ----------
+    player
+        ユーザーが入力したじゃんけん
+    computer
+        プリセットされたじゃんけんを出力(random関数によりランダムに出力される)
+
+    Returns
+    -------
+    "引き分け"
+        playerとcomputerが出力したものが同じであるため引き分け
+    "勝ち"
+        playerが入力した数値がcomputerに勝っていたためplayerの勝ち
+    "負け"
+        playerが入力した数値がcomputerに負けていたためplayerの負け
+    '''
     if player == computer:
         return '引き分け'
     elif player == 0 and computer == 1:

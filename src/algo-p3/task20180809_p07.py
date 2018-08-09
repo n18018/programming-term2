@@ -3,6 +3,21 @@
 
 
 def validate(hand):
+    '''
+    じゃんけんで出した手の形を正しく出力させるための関数(0,1,2以外で構文エラーが出ないようにするもの)
+
+    Parameters
+    ----------
+    hand
+        じゃんけんで出した手の形
+
+    Returns
+    -------
+    False
+        不正入力
+    True
+        正しい入力
+    '''
     # handが0より小さい、または2より大きい場合Falseを返してください
     # 上記以外の場合、Trueを返してください。
     if hand < 0:
@@ -14,6 +29,20 @@ def validate(hand):
 
 
 def print_hand(hand, name='ゲスト'):
+    '''
+    誰がじゃんけんで何を出したかを取得
+
+    Parameters
+    ----------
+    hand
+        じゃんけんで出した手の形
+    name='ゲスト'
+        プレイヤーの名前(初期値はゲスト)
+
+    Returns
+    -------
+    None
+    '''
     hands = ['グー', 'チョキ', 'パー']
     print(name + 'は' + hands[hand] + 'を出しました')
 
