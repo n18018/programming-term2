@@ -174,6 +174,6 @@ class Player:
         cmd_str = input("ゲームの状態はセーブされません。終了しますか?(y/n)")
 
         # cmd_strがyまたはYの場合、sys.exit()変数を呼び出してください。
-        if cmd_str == "y" or "Y":
-            sys.exit(0)
         # (文字列).upper()が"Y"かどうかで判断すれば、小文字が入力されても条件に合致します。
+        if cmd_str.upper() == "Y":
+            sys.exit()
