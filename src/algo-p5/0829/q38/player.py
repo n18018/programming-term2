@@ -117,7 +117,7 @@ class Player:
             # 毒の沼(20のダメージ)
             self.poisoned_in_swamp()
         elif event_nm == "PickUpPlant":
-            # TODO:上記のif〜elifに、event_nmが"PickUpPlant"の場合、下記に定義したself.pick_up_plant()を呼び出してください。
+            # 上記のif〜elifに、event_nmが"PickUpPlant"の場合、下記に定義したself.pick_up_plant()を呼び出してください。
             self.pick_up_plant()
 
     def go_more_forward(self, cells):
